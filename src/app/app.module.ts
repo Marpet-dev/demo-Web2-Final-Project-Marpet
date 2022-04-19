@@ -1,7 +1,8 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, RoutingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PolicyComponent } from './components/policy/policy.component';
 import { CatComponent } from './components/cat/cat.component';
@@ -28,11 +29,13 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
     NewsComponent,
     PetServicesComponent,
     SignInComponent,
-    SignUpComponent
+    SignUpComponent,
+    RoutingComponents
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
