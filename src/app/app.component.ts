@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Web2-Final-Project-Marpet-Official';
+  title = 'Web2-Final-Project-MarPet';
 }

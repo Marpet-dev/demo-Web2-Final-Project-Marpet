@@ -1,0 +1,91 @@
+/* .nav-item{
+    
+} */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index:1050;
+  /* display: none; */
+}
+.dangxuat {
+    pointer-events: none;
+    color:rgb(175, 175, 175);
+}
+.nav-link{
+    text-decoration: none;
+    color:#db7093;
+    font-weight: bold;
+    /* position: relative; */
+  display: inline-block;
+  overflow: hidden;
+  background: linear-gradient(to right, #db7093, #db7093 50%, black 50%);
+    background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+.nav-link:hover{
+    background-position: 0 100%;
+}
+
+/* all for fixed header */
+/* .khongDoi{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:9999999999;
+}
+.d-flex{
+  padding-bottom:5.5px;
+  padding-top:5.5px;
+}
+.dropdown-menu{
+  z-index:999999999999999;
+} */
+/* all for fixed header */
+.headerItemResponsive{
+  display:none;
+}
+.soSanPham{
+  position: absolute;
+    top: 100px;
+    right: 15px;
+    background: #db7093;
+    color: #fff;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.searchBarCSS{
+  margin-right:10px;
+}
+@media only screen and (max-width: 991.5px){
+  
+  .searchBarCSS{
+    margin-right:0px;
+  }
+}
+@media only screen and (max-width: 447px){
+  .headerItemResponsive{
+    display:block;
+  }
+  .headerItemResponsive2{
+    /* display:none; */
+  }
+  .searchBarCSS{
+    margin-right:0px;
+  }
+}
